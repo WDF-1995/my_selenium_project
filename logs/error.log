@@ -1,0 +1,75 @@
+2022-01-11 18:57:06,936 - ERROR - test01_AdminLogin.py[:59] - ≤‚ ‘Œ¥Õ®π˝ 'Õ¯¬Á«Î«Û¥ÌŒÛ' != 'Verification code expired'
+- Õ¯¬Á«Î«Û¥ÌŒÛ
++ Verification code expired
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: 'Õ¯¬Á«Î«Û¥ÌŒÛ' != 'Verification code expired'
+- Õ¯¬Á«Î«Û¥ÌŒÛ
++ Verification code expired
+
+2022-01-20 22:34:32,351 - ERROR - test01_AdminLogin.py[:59] - ≤‚ ‘Œ¥Õ®π˝ '' != 'Verification code expired'
++ Verification code expired
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Verification code expired'
++ Verification code expired
+2022-01-20 22:35:53,653 - ERROR - test01_AdminLogin.py[:59] - ≤‚ ‘Œ¥Õ®π˝ '{ "message": "Network Error", "name": "Er[699 chars] } }' != 'Verification code expired'
+Diff is 762 characters long. Set self.maxDiff to None to see it.
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '{ "message": "Network Error", "name": "Er[699 chars] } }' != 'Verification code expired'
+Diff is 762 characters long. Set self.maxDiff to None to see it.
+2022-01-20 22:36:56,806 - ERROR - test01_AdminLogin.py[:59] - ≤‚ ‘Œ¥Õ®π˝ '' != 'Verification code expired'
++ Verification code expired
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Verification code expired'
++ Verification code expired
+2022-01-25 11:22:02,401 - ERROR - test02_Home.py[:61] - ≤‚ ‘Œ¥Õ®π˝ 'ICoin Management System' != 'CashHere Management System'
+- ICoin Management System
+? - ^^^
++ CashHere Management System
+?  ^^^^^^^
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 58, in test01_logout
+    self.assertEqual(result.text, logout.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: 'ICoin Management System' != 'CashHere Management System'
+- ICoin Management System
+? - ^^^
++ CashHere Management System
+?  ^^^^^^^
+

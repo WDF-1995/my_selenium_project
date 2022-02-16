@@ -1,0 +1,160 @@
+2022-01-04 21:00:19,898 - INFO - --------------开始测试: 测试输入错误验证码登录失败 ---------------
+2022-01-04 21:00:20,092 - INFO - 输入用户名 admin
+2022-01-04 21:00:20,170 - INFO - 输入密码 12345678
+2022-01-04 21:00:20,245 - INFO - 输入验证码 666 
+2022-01-04 21:00:20,834 - INFO - 测试通过
+2022-01-04 21:00:20,834 - INFO - --------------结束测试: 测试输入错误验证码登录失败 ---------------
+
+2022-01-04 21:00:20,915 - INFO - --------------开始测试: 测试输入用户名为空登录失败 ---------------
+2022-01-04 21:00:20,977 - INFO - 输入用户名 
+2022-01-04 21:00:21,048 - INFO - 输入密码 123456
+2022-01-04 21:00:21,117 - INFO - 输入验证码 6666 
+2022-01-04 21:00:21,181 - INFO - 测试通过
+2022-01-04 21:00:21,181 - INFO - --------------结束测试: 测试输入用户名为空登录失败 ---------------
+
+2022-01-04 21:00:21,263 - INFO - --------------开始测试: 测试输入密码为空登录失败 ---------------
+2022-01-04 21:00:21,340 - INFO - 输入用户名 moneyloanplus
+2022-01-04 21:00:21,399 - INFO - 输入密码 
+2022-01-04 21:00:21,468 - INFO - 输入验证码 66666 
+2022-01-04 21:00:21,532 - INFO - 测试通过
+2022-01-04 21:00:21,532 - INFO - --------------结束测试: 测试输入密码为空登录失败 ---------------
+
+2022-01-04 21:00:21,621 - INFO - --------------开始测试: 测试输入验证码为空登录失败 ---------------
+2022-01-04 21:00:21,693 - INFO - 输入用户名 admin
+2022-01-04 21:00:21,769 - INFO - 输入密码 654321
+2022-01-04 21:00:21,832 - INFO - 输入验证码  
+2022-01-04 21:00:21,899 - ERROR - 测试未通过 '' != 'please enter verification code'
++ please enter verification code
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\testAdminLogin.py", line 102, in test1_login
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'please enter verification code'
++ please enter verification code
+2022-01-04 21:00:21,988 - INFO - --------------开始测试: 测试登录成功 ---------------
+2022-01-04 21:00:22,070 - INFO - 输入用户名 moneyloanplus
+2022-01-04 21:00:22,144 - INFO - 输入密码 12345678
+2022-01-04 21:00:22,433 - INFO - 输入验证码 5622 
+2022-01-04 21:01:42,478 - INFO - --------------开始测试: 测试输入错误验证码登录失败 ---------------
+2022-01-04 21:01:42,680 - INFO - 输入用户名 admin
+2022-01-04 21:01:42,760 - INFO - 输入密码 12345678
+2022-01-04 21:01:42,834 - INFO - 输入验证码 666 
+2022-01-04 21:01:43,425 - INFO - 测试通过
+2022-01-04 21:01:43,425 - INFO - --------------结束测试: 测试输入错误验证码登录失败 ---------------
+
+2022-01-04 21:01:43,510 - INFO - --------------开始测试: 测试输入验证码为空登录失败 ---------------
+2022-01-04 21:01:43,588 - INFO - 输入用户名 moneyloanplus
+2022-01-04 21:01:43,657 - INFO - 输入密码 654321
+2022-01-04 21:01:43,722 - INFO - 输入验证码  
+2022-01-04 21:01:43,796 - ERROR - 测试未通过 '' != 'please enter verification code'
++ please enter verification code
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\testAdminLogin.py", line 102, in test1_login
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'please enter verification code'
++ please enter verification code
+2022-01-04 21:01:43,882 - INFO - --------------开始测试: 测试输入用户名为空登录失败 ---------------
+2022-01-04 21:01:43,950 - INFO - 输入用户名 
+2022-01-04 21:01:44,020 - INFO - 输入密码 123456
+2022-01-04 21:01:44,092 - INFO - 输入验证码 6666 
+2022-01-04 21:01:44,158 - INFO - 测试通过
+2022-01-04 21:01:44,158 - INFO - --------------结束测试: 测试输入用户名为空登录失败 ---------------
+
+2022-01-04 21:01:44,247 - INFO - --------------开始测试: 测试输入密码为空登录失败 ---------------
+2022-01-04 21:01:44,328 - INFO - 输入用户名 moneyloanplus
+2022-01-04 21:01:44,387 - INFO - 输入密码 
+2022-01-04 21:01:44,458 - INFO - 输入验证码 66666 
+2022-01-04 21:01:44,521 - INFO - 测试通过
+2022-01-04 21:01:44,521 - INFO - --------------结束测试: 测试输入密码为空登录失败 ---------------
+
+2022-01-04 21:01:44,607 - INFO - --------------开始测试: 测试登录成功 ---------------
+2022-01-04 21:01:44,684 - INFO - 输入用户名 moneyloanplus
+2022-01-04 21:01:44,755 - INFO - 输入密码 12345678
+2022-01-04 21:01:45,064 - INFO - 输入验证码 3238 
+2022-01-04 21:02:00,283 - ERROR - 测试未通过 Message: 
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\testAdminLogin.py", line 67, in test1_login
+    result = self.loginPage.find_element('xpath',
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\pom\basePage.py", line 14, in find_element
+    return find_element_wait(self.driver, *loc)
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\util\util.py", line 80, in find_element_wait
+    return WebDriverWait(driver, timeout).until(lambda s: s.find_element(*locator))
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+2022-01-04 21:05:57,262 - INFO - --------------开始测试: 测试输入错误验证码登录失败 ---------------
+2022-01-04 21:05:58,263 - INFO - ----强制等待1s----
+2022-01-04 21:05:58,396 - INFO - ----刷新页面----
+2022-01-04 21:05:58,459 - INFO - 输入用户名 admin
+2022-01-04 21:05:58,517 - INFO - 输入密码 12345678
+2022-01-04 21:05:58,566 - INFO - 输入验证码 666 
+2022-01-04 21:05:59,144 - INFO - 测试通过
+2022-01-04 21:05:59,144 - INFO - --------------结束测试: 测试输入错误验证码登录失败 ---------------
+
+2022-01-04 21:05:59,145 - INFO - --------------开始测试: 测试输入验证码为空登录失败 ---------------
+2022-01-04 21:06:00,145 - INFO - ----强制等待1s----
+2022-01-04 21:06:00,235 - INFO - ----刷新页面----
+2022-01-04 21:06:00,292 - INFO - 输入用户名 moneyloanplus
+2022-01-04 21:06:00,334 - INFO - 输入密码 654321
+2022-01-04 21:06:00,375 - INFO - 输入验证码  
+2022-01-04 21:06:00,444 - ERROR - 测试未通过 '' != 'please enter verification code'
++ please enter verification code
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\testAdminLogin.py", line 105, in test1_login
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'please enter verification code'
++ please enter verification code
+2022-01-04 21:06:00,446 - INFO - --------------开始测试: 测试输入用户名为空登录失败 ---------------
+2022-01-04 21:06:01,446 - INFO - ----强制等待1s----
+2022-01-04 21:06:01,529 - INFO - ----刷新页面----
+2022-01-04 21:06:01,574 - INFO - 输入用户名 
+2022-01-04 21:06:01,619 - INFO - 输入密码 123456
+2022-01-04 21:06:01,664 - INFO - 输入验证码 6666 
+2022-01-04 21:06:01,717 - INFO - 测试通过
+2022-01-04 21:06:01,717 - INFO - --------------结束测试: 测试输入用户名为空登录失败 ---------------
+
+2022-01-04 21:06:01,717 - INFO - --------------开始测试: 测试输入密码为空登录失败 ---------------
+2022-01-04 21:06:02,717 - INFO - ----强制等待1s----
+2022-01-04 21:06:02,804 - INFO - ----刷新页面----
+2022-01-04 21:06:02,860 - INFO - 输入用户名 moneyloanplus
+2022-01-04 21:06:02,896 - INFO - 输入密码 
+2022-01-04 21:06:02,941 - INFO - 输入验证码 66666 
+2022-01-04 21:06:03,009 - INFO - 测试通过
+2022-01-04 21:06:03,009 - INFO - --------------结束测试: 测试输入密码为空登录失败 ---------------
+
+2022-01-04 21:06:03,009 - INFO - --------------开始测试: 测试登录成功 ---------------
+2022-01-04 21:06:04,009 - INFO - ----强制等待1s----
+2022-01-04 21:06:04,097 - INFO - ----刷新页面----
+2022-01-04 21:06:04,147 - INFO - 输入用户名 moneyloanplus
+2022-01-04 21:06:04,193 - INFO - 输入密码 12345678
+2022-01-04 21:06:04,458 - INFO - 输入验证码 6257 
+2022-01-04 21:06:19,660 - ERROR - 测试未通过 Message: 
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\testAdminLogin.py", line 70, in test1_login
+    result = self.loginPage.find_element('xpath',
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\pom\basePage.py", line 14, in find_element
+    return find_element_wait(self.driver, *loc)
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\util\util.py", line 80, in find_element_wait
+    return WebDriverWait(driver, timeout).until(lambda s: s.find_element(*locator))
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\support\wait.py", line 80, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+

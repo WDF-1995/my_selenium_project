@@ -1,0 +1,4 @@
+- username: 'icoin'
+  password: '123456'
+  expected: 'ICoin Management System'
+  case: '测试退出登录成功'

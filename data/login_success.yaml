@@ -1,0 +1,4 @@
+- username: 'icoin'
+  password: '123456'
+  expected: '首页'
+  case: '测试登录成功'

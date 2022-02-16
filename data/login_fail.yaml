@@ -1,0 +1,23 @@
+- username: 'admin'
+  password: '12345678'
+  captcha: '666'
+  expected: 'Verification code expired'
+  case: '测试输入错误验证码登录失败'
+
+- username: 'icoin'
+  password: '654321'
+  captcha: ''
+  expected: 'please enter verification code'
+  case: '测试输入验证码为空登录失败'
+
+- username: ''
+  password: '123456'
+  captcha: '6666'
+  expected: 'Please enter account'
+  case: '测试输入用户名为空登录失败'
+
+- username: 'icoin'
+  password: ''
+  captcha: '66666'
+  expected: 'Please enter password'
+  case: '测试输入密码为空登录失败'
