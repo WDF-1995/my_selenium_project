@@ -73,3 +73,98 @@ AssertionError: 'ICoin Management System' != 'CashHere Management System'
 + CashHere Management System
 ?  ^^^^^^^
 
+2022-02-18 10:56:34,520 - ERROR - basePage.py[:35] - 元素定位失败: Message: 
+ 
+2022-02-18 11:04:17,615 - ERROR - test01_AdminLogin.py[:83] - 测试未通过 '' != 'Please enter account'
++ Please enter account
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 80, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Please enter account'
++ Please enter account
+2022-02-18 11:04:43,803 - ERROR - basePage.py[:35] - 元素定位失败: Message: 
+ 
+2022-02-18 11:06:10,080 - ERROR - basePage.py[:35] - 元素定位失败: Message: 
+ 
+2022-02-18 11:08:17,057 - ERROR - test01_AdminLogin.py[:59] - 测试未通过 '' != 'Verification code expired'
++ Verification code expired
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Verification code expired'
++ Verification code expired
+2022-02-18 11:08:30,922 - ERROR - test02_Home.py[:64] - 测试未通过 '' != '输入名称或者邮箱搜索'
++ 输入名称或者邮箱搜索
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 61, in test01_enter_user_manage
+    self.assertEqual(result.text, home.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '输入名称或者邮箱搜索'
++ 输入名称或者邮箱搜索
+2022-02-18 11:11:43,485 - ERROR - test02_Home.py[:64] - 测试未通过 '' != '批量导入'
++ 批量导入
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 61, in test01_enter_user_manage
+    self.assertEqual(result.text, home.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '批量导入'
++ 批量导入
+2022-02-18 11:33:49,383 - ERROR - test01_AdminLogin.py[:59] - 测试未通过 '' != 'Verification code expired'
++ Verification code expired
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Verification code expired'
++ Verification code expired
+2022-02-18 11:34:07,739 - ERROR - test02_Home.py[:64] - 测试未通过 <selenium.webdriver.remote.webelement.WebElement (session="296dd0e3f8c33f3fd0ae14437cc8aa37", element="d6fdbc82-110b-4c6b-b9f2-e9626a24e28f")> is not None
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 61, in test01_enter_user_manage
+    self.assertIsNone(result)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1322, in assertIsNone
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: <selenium.webdriver.remote.webelement.WebElement (session="296dd0e3f8c33f3fd0ae14437cc8aa37", element="d6fdbc82-110b-4c6b-b9f2-e9626a24e28f")> is not None
+2022-02-18 11:37:18,758 - ERROR - test01_AdminLogin.py[:59] - 测试未通过 '' != 'Verification code expired'
++ Verification code expired
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Verification code expired'
++ Verification code expired
+2022-02-18 11:39:25,068 - ERROR - basePage.py[:35] - 元素定位失败: Message: 
+ 

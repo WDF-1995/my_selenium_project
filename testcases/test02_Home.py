@@ -45,24 +45,40 @@ class TestHome(unittest.TestCase):
         # time.sleep(2)
         # self.logger.info('----强制等待2s----')
 
-    @file_data(path + '/logout_success.yaml')
-    def test01_logout(self, **logout):
-        self.logger.info('\n\n--------------执行测试: %s ---------------', logout.get('case'))
+    @file_data(path + '/home.yaml')
+    def test01_enter_user_manage(self, **home):
+        self.logger.info('\n\n--------------执行测试: %s ---------------', home.get('case'))
         self.login.goto_login_page()
         self.logger.info('进入登录页面')
-        self.login.admin_login_success(logout.get('username'), logout.get('password'))
-        self.home.logout()
+        self.login.admin_login_success(home.get('username'), home.get('password'))
+        self.home.enter_user_manage()
+
         self.logger.info('开始断言')
-        print(logout.get('case'))
+        print(home.get('case'))
         try:
-            result = self.home.find_element('xpath', '//*[@id="app"]/div/form/h3')
-            self.assertEqual(result.text, logout.get('expected'))
+            result = self.home.find_element('xpath',
+                                            '//*[@id="app"]/div/div[2]/section/div/div[2]/div[2]/div[1]/div[6]/div/div/div/button')
+            self.assertIsNotNone(result)
             self.logger.info('测试通过')
         except Exception as e:
             self.logger.error('测试未通过 %s', e, exc_info=1)
             raise e
-        self.logger.info('\n--------------执行完毕: %s ---------------\n', logout.get('case'))
+        self.logger.info('\n--------------执行完毕: %s ---------------\n', home.get('case'))
 
+    # @file_data(path + '/logout_success.yaml')
+    # def test02_logout(self, **logout):
+    #     self.logger.info('\n\n--------------执行测试: %s ---------------', logout.get('case'))
+    #     self.home.logout()
+    #     self.logger.info('开始断言')
+    #     print(logout.get('case'))
+    #     try:
+    #         result = self.home.find_element('xpath', '//*[@id="app"]/div/form/h3')
+    #         self.assertEqual(result.text, logout.get('expected'))
+    #         self.logger.info('测试通过')
+    #     except Exception as e:
+    #         self.logger.error('测试未通过 %s', e, exc_info=1)
+    #         raise e
+    #     self.logger.info('\n--------------执行完毕: %s ---------------\n', logout.get('case'))
 
 # if __name__ == '__main__':
 #     unittest.main()

@@ -13,7 +13,7 @@ from selenium.webdriver.support.select import Select
 
 from lib.HTMLTestRunner import HTMLTestRunner
 
-from util.util import send_mail, get_logger
+from util.util import send_mail, get_logger, get_code
 
 if __name__ == '__main__':
     testcase = unittest.defaultTestLoader.discover('testcases', 'test*.py')
@@ -24,21 +24,26 @@ if __name__ == '__main__':
     with open(file=filepath, mode='wb') as report:
         runner = HTMLTestRunner(stream=report, title=title, description=descr, tester=tester)
         runner.run(testcase)
-    send_mail(filepath)
-    get_logger().info('send_email success')
-    # driver = webdriver.Chrome()
-    # driver.get('http://120.78.10.181:83')
-    # a = driver.title
-    # print(a)
-    # print(type(a))
-    # driver.find_     # print(code)
-    #         # print(t)element_by_xpath('//*[@id="app"]/div/form/div[1]/div/div[1]/input').send_keys('cashhere')
-    # driver.find_element_by_xpath('//*[@id="app"]/div/form/div[2]/div/div/input').send_keys('123456')
-    # time.sleep(10)
-
-    # a = get_code()
-    # print(a)
-
+    # send_mail(filepath)
+    # get_logger().info('send_email success')
+    # class Test(unittest.TestCase):
+    #     def test_ttt(self):
+    #         self.driver = webdriver.Chrome()
+    #         self.driver.get('http://120.25.153.60:84/login')
+    #         self.driver.find_element_by_xpath('//*[@id="app"]/div/form/div[1]/div/div[1]/input').send_keys('icoin')
+    #         self.driver.find_element_by_xpath('//*[@id="app"]/div/form/div[2]/div/div/input').send_keys('123456')
+    #
+    #         time.sleep(10)
+    #         self.driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[1]/div/ul/div[2]/li/div/i').click()
+    #         time.sleep(3)
+    #         self.driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[1]/div/ul/div[2]/li/ul/a[1]/li').click()
+    #         time.sleep(3)
+    #         e = self.driver.find_element_by_xpath(
+    #             '//*[@id="app"]/div/div[2]/section/div/div[2]/div[2]/div[1]/div[6]/div/div/div/button')
+    #         self.assertIsNotNone(e)
+    #         print(e.text)
+    #         print(e)
+    #         print(len(e))
     # path = os.path.dirname(__file__) + '\config'
     # configPath = os.path.join(path, "config.ini")
     #
@@ -56,4 +61,3 @@ if __name__ == '__main__':
     #
     # host = conf.get("Mysql-Database", "host")  # 获取[Mysql-Database]中host对应的值
     # print(type(host))
-
