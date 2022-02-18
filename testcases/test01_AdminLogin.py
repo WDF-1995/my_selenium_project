@@ -21,9 +21,9 @@ class TestAdminLogin(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.driver = webdriver.Chrome()
         cls.loginPage = AdminLoginPage(cls.driver)
-        cls.loginPage.goto_login_page()
         cls.logger = cls.loginPage.logger
         cls.logger.info('**********打开浏览器，开始测试**********')
+        cls.loginPage.goto_login_page()
 
     @classmethod
     def tearDownClass(cls) -> None:

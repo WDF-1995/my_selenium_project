@@ -168,3 +168,519 @@ AssertionError: '' != 'Verification code expired'
 + Verification code expired
 2022-02-18 11:39:25,068 - ERROR - basePage.py[:35] - 元素定位失败: Message: 
  
+2022-02-18 14:46:48,270 - ERROR - basePage.py[:35] - 元素定位失败: Message: 
+ 
+2022-02-18 15:49:19,120 - ERROR - basePage.py[:35] - 元素定位失败: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)) 
+2022-02-18 15:49:39,183 - ERROR - basePage.py[:35] - 元素定位失败: HTTPConnectionPool(host='127.0.0.1', port=62834): Max retries exceeded with url: /session/7e2e81f7e83dc6d3a7861057e9e6ee1c/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F0A40423A0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')) 
+2022-02-18 15:49:43,189 - ERROR - basePage.py[:35] - 元素定位失败: HTTPConnectionPool(host='127.0.0.1', port=62834): Max retries exceeded with url: /session/7e2e81f7e83dc6d3a7861057e9e6ee1c/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F0A3FC2FA0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')) 
+2022-02-18 15:50:34,084 - ERROR - basePage.py[:35] - 元素定位失败: Message: 
+ 
+2022-02-18 15:50:49,478 - ERROR - basePage.py[:35] - 元素定位失败: Message: 
+ 
+2022-02-18 16:14:39,321 - ERROR - test02_Home.py[:77] - 测试未通过 '用户管理' != '角色管理'
+- 用户管理
++ 角色管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 74, in test02_enter_role_manage
+    self.assertEqual(result.text, '角色管理')
+  File "E:\Pycharm\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '用户管理' != '角色管理'
+- 用户管理
++ 角色管理
+
+2022-02-18 16:15:20,723 - ERROR - test02_Home.py[:92] - 测试未通过 '角色管理' != '菜单管理'
+- 角色管理
++ 菜单管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 89, in test03_enter_menu_manage
+    self.assertEqual(result.text, '菜单管理')
+  File "E:\Pycharm\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '角色管理' != '菜单管理'
+- 角色管理
++ 菜单管理
+
+2022-02-18 16:15:20,830 - ERROR - test02_Home.py[:107] - 测试未通过 '角色管理' != '部门管理'
+- 角色管理
++ 部门管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 104, in test04_enter_department_manage
+    self.assertEqual(result.text, '部门管理')
+  File "E:\Pycharm\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '角色管理' != '部门管理'
+- 角色管理
++ 部门管理
+
+2022-02-18 16:15:20,925 - ERROR - test02_Home.py[:122] - 测试未通过 '菜单管理' != '岗位管理'
+- 菜单管理
++ 岗位管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 119, in test05_enter_post_manage
+    self.assertEqual(result.text, '岗位管理')
+  File "E:\Pycharm\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '菜单管理' != '岗位管理'
+- 菜单管理
++ 岗位管理
+
+2022-02-18 16:15:20,974 - ERROR - test02_Home.py[:137] - 测试未通过 '' != '字典管理'
++ 字典管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 134, in test06_enter_dict_manage
+    self.assertEqual(result.text, '字典管理')
+  File "E:\Pycharm\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '字典管理'
++ 字典管理
+2022-02-18 16:16:38,230 - ERROR - test02_Home.py[:107] - 测试未通过 '' != '部门管理'
++ 部门管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 104, in test04_enter_department_manage
+    self.assertEqual(result.text, '部门管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '部门管理'
++ 部门管理
+2022-02-18 16:16:38,323 - ERROR - test02_Home.py[:122] - 测试未通过 '部门管理' != '岗位管理'
+- 部门管理
++ 岗位管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 119, in test05_enter_post_manage
+    self.assertEqual(result.text, '岗位管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '部门管理' != '岗位管理'
+- 部门管理
++ 岗位管理
+
+2022-02-18 16:16:38,377 - ERROR - test02_Home.py[:137] - 测试未通过 Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 134, in test06_enter_dict_manage
+    self.assertEqual(result.text, '字典管理')
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+
+2022-02-18 16:20:13,576 - ERROR - test02_Home.py[:62] - 测试未通过 '' != '用户管理'
++ 用户管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 59, in test01_enter_user_manage
+    self.assertEqual(result.text, '用户管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '用户管理'
++ 用户管理
+2022-02-18 16:20:13,655 - ERROR - test02_Home.py[:77] - 测试未通过 '用户管理' != '角色管理'
+- 用户管理
++ 角色管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 74, in test02_enter_role_manage
+    self.assertEqual(result.text, '角色管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '用户管理' != '角色管理'
+- 用户管理
++ 角色管理
+
+2022-02-18 16:20:13,731 - ERROR - test02_Home.py[:92] - 测试未通过 Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 89, in test03_enter_menu_manage
+    self.assertEqual(result.text, '菜单管理')
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Administrator\AppData\Roaming\Python\Python38\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=98.0.4758.102)
+
+2022-02-18 16:20:13,824 - ERROR - test02_Home.py[:107] - 测试未通过 '' != '部门管理'
++ 部门管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 104, in test04_enter_department_manage
+    self.assertEqual(result.text, '部门管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '部门管理'
++ 部门管理
+2022-02-18 16:20:13,927 - ERROR - test02_Home.py[:122] - 测试未通过 '' != '岗位管理'
++ 岗位管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 119, in test05_enter_post_manage
+    self.assertEqual(result.text, '岗位管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '岗位管理'
++ 岗位管理
+2022-02-18 16:20:14,034 - ERROR - test02_Home.py[:137] - 测试未通过 '' != '字典管理'
++ 字典管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 134, in test06_enter_dict_manage
+    self.assertEqual(result.text, '字典管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '字典管理'
++ 字典管理
+2022-02-18 16:23:52,785 - ERROR - test01_AdminLogin.py[:59] - 测试未通过 '' != 'Verification code expired'
++ Verification code expired
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Verification code expired'
++ Verification code expired
+2022-02-18 16:25:19,804 - ERROR - test01_AdminLogin.py[:59] - 测试未通过 '' != 'Verification code expired'
++ Verification code expired
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Verification code expired'
++ Verification code expired
+2022-02-18 16:25:34,141 - ERROR - test02_Home.py[:77] - 测试未通过 '用户管理' != '角色管理'
+- 用户管理
++ 角色管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 74, in test02_enter_role_manage
+    self.assertEqual(result.text, '角色管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '用户管理' != '角色管理'
+- 用户管理
++ 角色管理
+
+2022-02-18 16:25:36,002 - ERROR - test02_Home.py[:107] - 测试未通过 '菜单管理' != '部门管理'
+- 菜单管理
++ 部门管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 104, in test04_enter_department_manage
+    self.assertEqual(result.text, '部门管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '菜单管理' != '部门管理'
+- 菜单管理
++ 部门管理
+
+2022-02-18 16:25:36,614 - ERROR - test02_Home.py[:122] - 测试未通过 '部门管理' != '岗位管理'
+- 部门管理
++ 岗位管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 119, in test05_enter_post_manage
+    self.assertEqual(result.text, '岗位管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '部门管理' != '岗位管理'
+- 部门管理
++ 岗位管理
+
+2022-02-18 16:25:37,198 - ERROR - test02_Home.py[:137] - 测试未通过 '岗位管理' != '字典管理'
+- 岗位管理
++ 字典管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 134, in test06_enter_dict_manage
+    self.assertEqual(result.text, '字典管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '岗位管理' != '字典管理'
+- 岗位管理
++ 字典管理
+
+2022-02-18 16:26:55,187 - ERROR - test02_Home.py[:77] - 测试未通过 '' != '角色管理'
++ 角色管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 74, in test02_enter_role_manage
+    self.assertEqual(result.text, '角色管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '角色管理'
++ 角色管理
+2022-02-18 16:26:56,326 - ERROR - test02_Home.py[:92] - 测试未通过 '角色管理' != '菜单管理'
+- 角色管理
++ 菜单管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 89, in test03_enter_menu_manage
+    self.assertEqual(result.text, '菜单管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '角色管理' != '菜单管理'
+- 角色管理
++ 菜单管理
+
+2022-02-18 16:26:57,604 - ERROR - test02_Home.py[:107] - 测试未通过 '菜单管理' != '部门管理'
+- 菜单管理
++ 部门管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 104, in test04_enter_department_manage
+    self.assertEqual(result.text, '部门管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '菜单管理' != '部门管理'
+- 菜单管理
++ 部门管理
+
+2022-02-18 16:26:58,756 - ERROR - test02_Home.py[:122] - 测试未通过 '部门管理' != '岗位管理'
+- 部门管理
++ 岗位管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 119, in test05_enter_post_manage
+    self.assertEqual(result.text, '岗位管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '部门管理' != '岗位管理'
+- 部门管理
++ 岗位管理
+
+2022-02-18 16:26:59,864 - ERROR - test02_Home.py[:137] - 测试未通过 '岗位管理' != '字典管理'
+- 岗位管理
++ 字典管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 134, in test06_enter_dict_manage
+    self.assertEqual(result.text, '字典管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '岗位管理' != '字典管理'
+- 岗位管理
++ 字典管理
+
+2022-02-18 16:45:40,488 - ERROR - test02_Home.py[:77] - 测试未通过 '' != '角色列表'
++ 角色列表
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 74, in test02_enter_role_manage
+    self.assertEqual(result.text, '角色列表')
+  File "E:\Pycharm\PyCharm Community Edition 2021.2\plugins\python-ce\helpers\pycharm\teamcity\diff_tools.py", line 32, in _patched_equals
+    old(self, first, second, msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '角色列表'
++ 角色列表
+2022-02-18 16:49:27,074 - ERROR - test01_AdminLogin.py[:59] - 测试未通过 '' != 'Verification code expired'
++ Verification code expired
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test01_AdminLogin.py", line 56, in test1_login_failed
+    self.assertEqual(result.text, login.get('expected'))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != 'Verification code expired'
++ Verification code expired
+2022-02-18 16:49:40,512 - ERROR - test02_Home.py[:122] - 测试未通过 '' != '操作'
++ 操作
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 119, in test05_enter_post_manage
+    self.assertEqual(result.text, '操作')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '操作'
++ 操作
+2022-02-18 16:50:49,086 - ERROR - test02_Home.py[:63] - 测试未通过 '' != '用户名'
++ 用户名
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 60, in test01_enter_user_manage
+    self.assertEqual(result.text, '用户名')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '用户名'
++ 用户名
+2022-02-18 16:51:01,081 - ERROR - test02_Home.py[:123] - 测试未通过 '' != '操作'
++ 操作
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 120, in test05_enter_post_manage
+    self.assertEqual(result.text, '操作')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '操作'
++ 操作
+2022-02-18 16:53:16,429 - ERROR - test02_Home.py[:63] - 测试未通过 '' != '用户管理'
++ 用户管理
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 60, in test01_enter_user_manage
+    self.assertEqual(result.text, '用户管理')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '用户管理'
++ 用户管理
+2022-02-18 16:53:28,950 - ERROR - test02_Home.py[:123] - 测试未通过 '' != '操作'
++ 操作
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 120, in test05_enter_post_manage
+    self.assertEqual(result.text, '操作')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '操作'
++ 操作
+2022-02-18 16:56:38,616 - ERROR - test02_Home.py[:63] - 测试未通过 '' != '用户名'
++ 用户名
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 60, in test01_enter_user_manage
+    self.assertEqual(result.text, '用户名')
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1292, in assertMultiLineEqual
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: '' != '用户名'
++ 用户名
+2022-02-18 16:58:43,050 - ERROR - test02_Home.py[:63] - 测试未通过 <selenium.webdriver.remote.webelement.WebElement (session="a86f59c39a4485ef6a664cd58a9d8002", element="93b71ea6-24f4-4052-b57b-a110bb36e7fd")> is not None
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 60, in test01_enter_user_manage
+    self.assertIsNone(result)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1322, in assertIsNone
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: <selenium.webdriver.remote.webelement.WebElement (session="a86f59c39a4485ef6a664cd58a9d8002", element="93b71ea6-24f4-4052-b57b-a110bb36e7fd")> is not None
+2022-02-18 16:58:55,450 - ERROR - test02_Home.py[:123] - 测试未通过 <selenium.webdriver.remote.webelement.WebElement (session="a86f59c39a4485ef6a664cd58a9d8002", element="453046f4-e725-45f9-b9dd-4d015bbe1122")> is not None
+Traceback (most recent call last):
+  File "E:\Study\pythonProject\pythonProject\my_selenium_project\testcases\test02_Home.py", line 120, in test05_enter_post_manage
+    self.assertIsNone(result)
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 1322, in assertIsNone
+    self.fail(self._formatMessage(msg, standardMsg))
+  File "C:\Program Files\Python38\lib\unittest\case.py", line 753, in fail
+    raise self.failureException(msg)
+AssertionError: <selenium.webdriver.remote.webelement.WebElement (session="a86f59c39a4485ef6a664cd58a9d8002", element="453046f4-e725-45f9-b9dd-4d015bbe1122")> is not None

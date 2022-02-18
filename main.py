@@ -24,26 +24,20 @@ if __name__ == '__main__':
     with open(file=filepath, mode='wb') as report:
         runner = HTMLTestRunner(stream=report, title=title, description=descr, tester=tester)
         runner.run(testcase)
-    # send_mail(filepath)
-    # get_logger().info('send_email success')
-    # class Test(unittest.TestCase):
-    #     def test_ttt(self):
-    #         self.driver = webdriver.Chrome()
-    #         self.driver.get('http://120.25.153.60:84/login')
-    #         self.driver.find_element_by_xpath('//*[@id="app"]/div/form/div[1]/div/div[1]/input').send_keys('icoin')
-    #         self.driver.find_element_by_xpath('//*[@id="app"]/div/form/div[2]/div/div/input').send_keys('123456')
+    send_mail(filepath)
+    get_logger().info('send_email success')
     #
-    #         time.sleep(10)
-    #         self.driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[1]/div/ul/div[2]/li/div/i').click()
-    #         time.sleep(3)
-    #         self.driver.find_element_by_xpath('//*[@id="app"]/div/div[1]/div[1]/div/ul/div[2]/li/ul/a[1]/li').click()
-    #         time.sleep(3)
-    #         e = self.driver.find_element_by_xpath(
-    #             '//*[@id="app"]/div/div[2]/section/div/div[2]/div[2]/div[1]/div[6]/div/div/div/button')
-    #         self.assertIsNotNone(e)
-    #         print(e.text)
-    #         print(e)
-    #         print(len(e))
+    # driver = webdriver.Chrome()
+    # driver.get('http://120.25.153.60:84/login')
+    # driver.find_element_by_xpath('//*[@id="app"]/div/form/div[1]/div/div[1]/input').send_keys('test')
+    # driver.find_element_by_xpath('//*[@id="app"]/div/form/div[2]/div/div/input').send_keys('123456')
+    #
+    # time.sleep(20)
+    # e= driver.find_element_by_xpath('//*[@id="app"]/div/div[2]/section/div/div[3]/div[1]/div/div[1]/div/span')
+    # print(e.text)
+    # print(e)
+
+
     # path = os.path.dirname(__file__) + '\config'
     # configPath = os.path.join(path, "config.ini")
     #

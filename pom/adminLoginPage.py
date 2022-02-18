@@ -25,7 +25,7 @@ class AdminLoginPage(BasePage):
     def goto_login_page(self):
         self.driver.get('http://120.25.153.60:84/login')
         self.driver.maximize_window()
-        self.get_title()
+        self.logger.info('进入登录页面')
 
     def click_remember_btn(self):
         self.click(*self.agree_btn)
