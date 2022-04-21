@@ -31,7 +31,7 @@ class TestAdminLogin(unittest.TestCase):
         cls.loginPage.quit_browser()
         cls.logger.info('**********关闭浏览器，结束测试**********\n\n')
         time.sleep(3)
-        cls.logger.info('----强制等待3s----\n\n')
+        # cls.logger.info('----强制等待3s----\n\n')
 
     def setUp(self) -> None:
         self.loginPage.refresh_browser()
